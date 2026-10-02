@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PureSlice | Limpiador Efervescente Natural de Frutas y Verduras</title>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN with forms and container queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              500: '#10b981',
+              600: '#059669', // Emerald Primary
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b'
+            },
+            aqua: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              400: '#2dd4bf',
+              500: '#14b8a6'
+            },
+            cream: '#FDFBF7'
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-utilities">
+    /* Custom subtle animations and mobile view enhancements */
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .badge-glow {
+      box-shadow: 0 0 12px rgba(16, 185, 129, 0.35);
+    }
+  </style>
+</head>
+<body class="bg-cream text-slate-800 font-sans antialiased pb-24 selection:bg-brand-100 selection:text-brand-800">
+<!-- BEGIN: MobileHeader -->
+<header class="sticky top-0 z-40 glass-nav border-b border-slate-100 px-4 py-3 flex items-center justify-between" data-purpose="mobile-navbar">
+<!-- Brand Logo and Name Container -->
+<a aria-label="PureSlice Inicio" class="flex items-center gap-2" href="#hero">
+<img alt="PureSlice Logo" class="h-9 w-9 object-contain rounded-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaCFLirpqG9C27YRG650xYbJd3Ekzys30VZS8SmRcP-05S1Mvj6E7pRhDkUdAYukjT33mC1tGxzfTFDr55Zo_Mr5pjW7vJvUr0MMP8udRgkEAgpjw5bj7kWPlINYdc0R_LRiMToarrIBe5qO7EpQhtQmpQfS18UAMWMLedRnzMfbVnEq8Wj7AU2dKXw7c8GwXPRC4XM_nwY3SjmOd6THiT63Cx7xxN5rH0iDok6IhLssgomcMgAn1e"/>
+<span class="font-extrabold text-xl tracking-tight text-brand-700">Pure<span class="text-teal-500">Slice</span></span>
+</a>
+<!-- Cart and Action Icon with Notification Badge -->
+<div class="flex items-center gap-2">
+<a aria-label="Ver carrito de compras" class="relative p-2 rounded-full hover:bg-slate-100 transition-colors" href="#comprar">
+<svg class="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="absolute top-1 right-1 bg-brand-600 text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center badge-glow">1</span>
+</a>
+</div>
+</header>
+<!-- END: MobileHeader -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="px-4 pt-6 pb-8 max-w-lg mx-auto" data-purpose="product-hero" id="hero">
+<!-- Tag / Trust pill -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100/70 text-brand-700 text-xs font-semibold mb-3">
+<span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+        Tabletas Efervescentes Bio-Enzimáticas
+      </div>
+<!-- Main Headline -->
+<h1 class="text-3xl font-extrabold text-slate-900 leading-[1.2] mb-3">
+        Limpia frutas y verduras de forma <span class="text-brand-600 underline decoration-brand-200 decoration-wavy">100% natural</span> y segura
+      </h1>
+<!-- Subtitle Description -->
+<p class="text-slate-600 text-sm leading-relaxed mb-5">
+        Enzimas botánicas activas que eliminan agroquímicos, ceras protectoras y bacterias en tan solo <strong class="text-slate-800">3 minutos</strong>, sin dejar olores ni alterar el sabor natural.
+      </p>
+<!-- Primary Product Photography Showcase -->
+<div class="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200/80 bg-white mb-6 group">
+<img alt="Fotografía de producto PureSlice: tubo con pastillas efervescentes limpiando frutas en tazón de agua cristalina" class="w-full h-auto object-cover transform duration-500 group-hover:scale-102" height="1024" loading="eager" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB08QJ284X5IzEiY5BwGqovt8GQjGWz9kgR7Yj-lENMsTaYRs9p3de9NcE8MkDDISnOCMzCEVNYVx23S2IRy1Bcpx3HGQPQbVFaG8-h7B_UL9TiOT-UV2CRh92xxrcLlSKkLyvoFKV8Hh7PdxLjWXAf8kI4kPt0quc2g0WBIomaZGH4nSAYe1C2-Pw1vVqaGcf9eaTAE7EOEM80tJu8McOR1KTZkvnF9W1t_JkPTI_M_mGPGktBxSRo" width="1024"/>
+<!-- Verified Natural Tag Overlay -->
+<div class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-slate-700 shadow-sm flex items-center gap-1.5">
+<svg class="w-4 h-4 text-brand-600" fill="currentColor" viewbox="0 0 20 20">
+<path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path>
+</svg>
+          Ingredientes Grado Alimentario
+        </div>
+</div>
+<!-- Hero Call To Action Buttons -->
+<div class="flex flex-col gap-3">
+<a class="w-full bg-brand-600 hover:bg-brand-700 active:scale-[0.99] text-white font-bold py-3.5 px-6 rounded-xl text-center shadow-lg shadow-brand-600/25 transition-all text-base flex items-center justify-center gap-2" href="#comprar">
+<span>Probar PureSlice Ahora</span>
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+<div class="flex items-center justify-center gap-4 text-xs text-slate-500 pt-1">
+<span class="flex items-center gap-1">🌱 0% Residuos Tóxicos</span>
+<span class="flex items-center gap-1">⏱️ Actúa en 3 Minutos</span>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: ComparisonSection -->
+<section class="bg-white py-10 px-4 border-y border-slate-100" data-purpose="clean-comparison">
+<div class="max-w-lg mx-auto">
+<div class="text-center mb-6">
+<h2 class="text-2xl font-bold text-slate-900">¿Por qué el agua o el cloro no bastan?</h2>
+<p class="text-slate-500 text-xs mt-1">Comparativa directa con los métodos comunes en casa</p>
+</div>
+<div class="space-y-3.5">
+<!-- Card 1: Solo Agua -->
+<div class="p-4 rounded-xl border border-red-100 bg-red-50/40">
+<div class="flex items-start gap-3">
+<span class="text-xl">🚿</span>
+<div>
+<h3 class="font-bold text-sm text-red-950">Solo Agua del Grifo</h3>
+<p class="text-xs text-slate-600 mt-0.5">Los pesticidas y ceras están formulados para ser hidrofóbicos (resistentes a la lluvia). El agua sola apenas remueve el polvo superficial.</p>
+</div>
+</div>
+</div>
+<!-- Card 2: Cloro / Lavandina -->
+<div class="p-4 rounded-xl border border-amber-100 bg-amber-50/40">
+<div class="flex items-start gap-3">
+<span class="text-xl">⚠️</span>
+<div>
+<h3 class="font-bold text-sm text-amber-950">Cloro o Lejía Casera</h3>
+<p class="text-xs text-slate-600 mt-0.5">Riesgoso para la salud si se dosifica mal. Deja olor químico penetrante, altera el sabor natural y puede dañar los tejidos celulares vegetales.</p>
+</div>
+</div>
+</div>
+<!-- Card 3: PureSlice Solution -->
+<div class="p-4 rounded-xl border-2 border-brand-500 bg-brand-50/50 shadow-sm relative">
+<span class="absolute -top-2.5 right-3 bg-brand-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">La Solución Óptima</span>
+<div class="flex items-start gap-3">
+<span class="text-xl">✨</span>
+<div>
+<h3 class="font-bold text-sm text-brand-900">Tabletas PureSlice</h3>
+<p class="text-xs text-brand-950/80 mt-0.5">El poder efervescente disuelve y desprende el 99.4% de ceras, microplásticos y pesticidas en 3 minutos. Totalmente biodegradable y libre de cloro.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ComparisonSection -->
+<!-- BEGIN: HowItWorks -->
+<section class="py-10 px-4 max-w-lg mx-auto" data-purpose="how-to-use-guide">
+<div class="text-center mb-8">
+<span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Simple y Rápido</span>
+<h2 class="text-2xl font-bold text-slate-900 mt-1">Cómo Usarlo en 3 Pasos</h2>
+</div>
+<div class="space-y-6">
+<!-- Step 1 -->
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 w-11 h-11 bg-brand-100 text-brand-700 font-extrabold rounded-2xl flex items-center justify-center text-lg shadow-sm border border-brand-200">
+            1
+          </div>
+<div>
+<h3 class="font-bold text-slate-900 text-sm">Disuelve una pastilla</h3>
+<p class="text-xs text-slate-600 mt-1">Coloca 1 tableta efervescente en un tazón o ensaladera con 2 a 3 litros de agua regular. Verás las burbujas enzimáticas activarse al instante.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 w-11 h-11 bg-brand-100 text-brand-700 font-extrabold rounded-2xl flex items-center justify-center text-lg shadow-sm border border-brand-200">
+            2
+          </div>
+<div>
+<h3 class="font-bold text-slate-900 text-sm">Sumerge durante 3 minutos</h3>
+<p class="text-xs text-slate-600 mt-1">Sumerge tus manzanas, fresas, hojas verdes o cítricos. La acción efervescente desprenderá la suciedad y agroquímicos sin frotar con fuerza.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 w-11 h-11 bg-brand-100 text-brand-700 font-extrabold rounded-2xl flex items-center justify-center text-lg shadow-sm border border-brand-200">
+            3
+          </div>
+<div>
+<h3 class="font-bold text-slate-900 text-sm">Enjuaga con agua fresca y disfruta</h3>
+<p class="text-xs text-slate-600 mt-1">Pasa los alimentos rápidamente bajo el grifo. Disfruta de frutas con su frescura intacta, más crujientes y con vida útil extendida.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HowItWorks -->
+<!-- BEGIN: KeyBenefits -->
+<section class="bg-brand-900 text-white py-10 px-4 rounded-3xl mx-3 mb-10" data-purpose="product-benefits">
+<div class="text-center mb-6">
+<h2 class="text-2xl font-bold">Poder natural en cada tableta</h2>
+<p class="text-brand-200 text-xs mt-1">Cuidado integral para tu salud y el planeta</p>
+</div>
+<div class="grid grid-cols-2 gap-3 text-left">
+<!-- Benefit 1 -->
+<div class="bg-white/10 backdrop-blur-sm p-3.5 rounded-xl border border-white/10">
+<div class="text-2xl mb-1.5">🥑</div>
+<h4 class="font-bold text-xs">Grado Alimentario 100%</h4>
+<p class="text-[11px] text-brand-100 mt-1">Ingredientes orgánicos libres de toxinas o sulfatos agresivos.</p>
+</div>
+<!-- Benefit 2 -->
+<div class="bg-white/10 backdrop-blur-sm p-3.5 rounded-xl border border-white/10">
+<div class="text-2xl mb-1.5">🍃</div>
+<h4 class="font-bold text-xs">Sin Sabor Residual</h4>
+<p class="text-[11px] text-brand-100 mt-1">Conserva el dulzor y aroma real de tus bayas y vegetales.</p>
+</div>
+<!-- Benefit 3 -->
+<div class="bg-white/10 backdrop-blur-sm p-3.5 rounded-xl border border-white/10">
+<div class="text-2xl mb-1.5">📦</div>
+<h4 class="font-bold text-xs">Eco Tubo Zero Waste</h4>
+<p class="text-[11px] text-brand-100 mt-1">Tubo de cartón biodegradable con tapón de corcho natural.</p>
+</div>
+<!-- Benefit 4 -->
+<div class="bg-white/10 backdrop-blur-sm p-3.5 rounded-xl border border-white/10">
+<div class="text-2xl mb-1.5">💧</div>
+<h4 class="font-bold text-xs">Ahorra Agua y Tiempo</h4>
+<p class="text-[11px] text-brand-100 mt-1">Limpia un lote entero de verduras en un solo tazón en 3 min.</p>
+</div>
+</div>
+</section>
+<!-- END: KeyBenefits -->
+<!-- BEGIN: PricingAndPacks -->
+<section class="px-4 py-6 max-w-lg mx-auto" data-purpose="pricing-section" id="comprar">
+<div class="text-center mb-6">
+<span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Elige tu Paquete</span>
+<h2 class="text-2xl font-bold text-slate-900 mt-1">Frutas y verduras seguras hoy</h2>
+</div>
+<div class="space-y-4">
+<!-- Option 1: Pack Individual -->
+<div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between">
+<div>
+<h3 class="font-bold text-base text-slate-900">Pack Inicio (1 Tubo)</h3>
+<p class="text-xs text-slate-500">20 tabletas efervescentes (~1 mes)</p>
+<div class="mt-2 text-xl font-extrabold text-slate-800">$14.99 <span class="text-xs font-normal text-slate-500">+ envío</span></div>
+</div>
+<button class="bg-slate-100 hover:bg-brand-50 text-slate-700 hover:text-brand-700 font-bold px-4 py-2.5 rounded-xl text-xs border border-slate-300 transition-colors" data-purpose="select-plan-single">
+            Seleccionar
+          </button>
+</div>
+<!-- Option 2: Pack Popular Ahorro (Destacado) -->
+<div class="bg-white p-5 rounded-2xl border-2 border-brand-500 shadow-md relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-brand-600 text-white text-[10px] font-extrabold px-3 py-1 rounded-bl-lg uppercase tracking-wide">
+            Más Elegido • 33% OFF
+          </div>
+<div>
+<span class="text-xs font-bold text-brand-600 uppercase">Trío Familiar + Envío Gratis</span>
+<h3 class="font-bold text-lg text-slate-900 mt-0.5">Pack 3 Tubos Ahorro</h3>
+<p class="text-xs text-slate-500">60 tabletas efervescentes (~3 meses de frescura)</p>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="text-2xl font-extrabold text-brand-700">$29.99</span>
+<span class="text-sm line-through text-slate-400">$44.97</span>
+</div>
+<button class="w-full mt-4 bg-brand-600 hover:bg-brand-700 active:scale-[0.99] text-white font-bold py-3 px-4 rounded-xl text-sm shadow-md transition-all" data-purpose="select-plan-popular">
+              Comprar Pack 3 Tubos
+            </button>
+</div>
+</div>
+<!-- Option 3: Recargas Sustentables -->
+<div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between">
+<div>
+<div class="flex items-center gap-1.5">
+<h3 class="font-bold text-base text-slate-900">Bolsa Recarga Kraft</h3>
+<span class="text-[10px] bg-amber-100 text-amber-800 font-bold px-1.5 py-0.5 rounded">Sin Tubo</span>
+</div>
+<p class="text-xs text-slate-500">40 tabletas para rellenar tus tubos</p>
+<div class="mt-2 text-xl font-extrabold text-slate-800">$21.50</div>
+</div>
+<button class="bg-slate-100 hover:bg-brand-50 text-slate-700 hover:text-brand-700 font-bold px-4 py-2.5 rounded-xl text-xs border border-slate-300 transition-colors" data-purpose="select-plan-refill">
+            Seleccionar
+          </button>
+</div>
+</div>
+</section>
+<!-- END: PricingAndPacks -->
+<!-- BEGIN: TestimonialsAndReviews -->
+<section class="py-10 px-4 max-w-lg mx-auto bg-slate-50 rounded-3xl my-6" data-purpose="customer-reviews">
+<div class="text-center mb-6">
+<div class="flex justify-center items-center gap-1 text-amber-400 mb-1">
+<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+</div>
+<h2 class="text-xl font-bold text-slate-900">Familias tranquilas y sanas</h2>
+<p class="text-slate-500 text-xs">Más de 8,500 hogares ya lavan con PureSlice</p>
+</div>
+<!-- Testimonial Cards Carousel / List -->
+<div class="space-y-3">
+<!-- Review 1 -->
+<article class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
+<div class="flex items-center gap-2 mb-2">
+<div class="w-8 h-8 rounded-full bg-brand-100 text-brand-700 font-bold text-xs flex items-center justify-center">
+              MG
+            </div>
+<div>
+<p class="text-xs font-bold text-slate-800">Mariana G.</p>
+<p class="text-[10px] text-slate-400">Mamá y Nutricionista • Compra verificada</p>
+</div>
+</div>
+<p class="text-xs text-slate-600 leading-relaxed">
+            "Es impresionante cómo queda el agua después de sumergir las manzanas. Quita toda la cera grasosa blanca sin dejar sabor a vinagre ni olor a cloro. Las fresas me duran 4 días más."
+          </p>
+</article>
+<!-- Review 2 -->
+<article class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
+<div class="flex items-center gap-2 mb-2">
+<div class="w-8 h-8 rounded-full bg-teal-100 text-teal-700 font-bold text-xs flex items-center justify-center">
+              CR
+            </div>
+<div>
+<p class="text-xs font-bold text-slate-800">Carlos R.</p>
+<p class="text-[10px] text-slate-400">Chef y apasionado de la cocina</p>
+</div>
+</div>
+<p class="text-xs text-slate-600 leading-relaxed">
+            "El formato en pastilla es comodísimo. Una pastilla en la pileta o ensaladera y listo. Muy estético el envase de cartón y corcho, queda genial en la mesada."
+          </p>
+</article>
+</div>
+</section>
+<!-- END: TestimonialsAndReviews -->
+<!-- BEGIN: FAQSection -->
+<section class="py-8 px-4 max-w-lg mx-auto" data-purpose="faq-section">
+<h2 class="text-xl font-bold text-slate-900 text-center mb-5">Preguntas Frecuentes</h2>
+<div class="space-y-3">
+<!-- FAQ 1 -->
+<details class="bg-white border border-slate-200 rounded-xl p-3.5 group cursor-pointer">
+<summary class="font-bold text-xs text-slate-800 flex justify-between items-center list-none">
+            ¿Es seguro para mujeres embarazadas y bebés?
+            <span class="text-slate-400 group-open:rotate-180 transition-transform text-sm">▼</span>
+</summary>
+<p class="text-xs text-slate-600 mt-2.5 pt-2.5 border-t border-slate-100 leading-relaxed">
+            Totalmente. Está formulado con minerales y extractos botánicos de grado alimentario certificados. No deja subproductos clorados ni metales pesados.
+          </p>
+</details>
+<!-- FAQ 2 -->
+<details class="bg-white border border-slate-200 rounded-xl p-3.5 group cursor-pointer">
+<summary class="font-bold text-xs text-slate-800 flex justify-between items-center list-none">
+            ¿Cambia el sabor de las frutas tiernas como frambuesas?
+            <span class="text-slate-400 group-open:rotate-180 transition-transform text-sm">▼</span>
+</summary>
+<p class="text-xs text-slate-600 mt-2.5 pt-2.5 border-t border-slate-100 leading-relaxed">
+            No. A diferencia del vinagre o lavandina diluida, PureSlice es 100% neutro aromáticamente una vez enjuagado brevemente con agua.
+          </p>
+</details>
+<!-- FAQ 3 -->
+<details class="bg-white border border-slate-200 rounded-xl p-3.5 group cursor-pointer">
+<summary class="font-bold text-xs text-slate-800 flex justify-between items-center list-none">
+            ¿Cuánto dura un tubo con pastillas efervescentes?
+            <span class="text-slate-400 group-open:rotate-180 transition-transform text-sm">▼</span>
+</summary>
+<p class="text-xs text-slate-600 mt-2.5 pt-2.5 border-t border-slate-100 leading-relaxed">
+            Cada tubo contiene 20 tabletas. Si lavas compras grandes 4 o 5 veces por semana, rinde aproximadamente un mes entero de uso familiar.
+          </p>
+</details>
+</div>
+</section>
+<!-- END: FAQSection -->
+</main>
+<!-- BEGIN: Footer -->
+<footer class="bg-slate-900 text-slate-400 text-xs py-8 px-4 text-center mt-6" data-purpose="site-footer">
+<div class="flex justify-center items-center gap-2 mb-3">
+<img alt="PureSlice Logo" class="h-6 w-6 object-contain grayscale opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaCFLirpqG9C27YRG650xYbJd3Ekzys30VZS8SmRcP-05S1Mvj6E7pRhDkUdAYukjT33mC1tGxzfTFDr55Zo_Mr5pjW7vJvUr0MMP8udRgkEAgpjw5bj7kWPlINYdc0R_LRiMToarrIBe5qO7EpQhtQmpQfS18UAMWMLedRnzMfbVnEq8Wj7AU2dKXw7c8GwXPRC4XM_nwY3SjmOd6THiT63Cx7xxN5rH0iDok6IhLssgomcMgAn1e"/>
+<span class="text-white font-bold tracking-tight">PureSlice</span>
+</div>
+<p class="text-slate-500 mb-4 max-w-xs mx-auto text-[11px]">
+      Pastillas efervescentes enzimáticas formuladas para cuidar la nutrición de tu familia y proteger el planeta.
+    </p>
+<div class="flex justify-center gap-4 text-slate-400 mb-4 text-[11px]">
+<a class="hover:underline" href="#">Políticas de Envío</a>
+<span>•</span>
+<a class="hover:underline" href="#">Términos y Condiciones</a>
+<span>•</span>
+<a class="hover:underline" href="#">Contacto</a>
+</div>
+<p class="text-[10px] text-slate-600">© 2025 PureSlice. Todos los derechos reservados.</p>
+</footer>
+<!-- END: Footer -->
+<!-- BEGIN: FixedBottomStickyBar -->
+<aside class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-3 shadow-[0_-4px_16px_rgba(0,0,0,0.08)]" data-purpose="sticky-bottom-cta">
+<div class="max-w-lg mx-auto flex items-center justify-between gap-4">
+<div>
+<div class="text-[11px] text-slate-500 font-medium">Pack Ahorro 3 Tubos</div>
+<div class="text-lg font-extrabold text-brand-700 leading-none">$29.99 <span class="text-xs font-normal text-slate-400 line-through">$44.97</span></div>
+</div>
+<a class="flex-1 bg-brand-600 hover:bg-brand-700 active:scale-95 text-white font-bold py-3 px-5 rounded-xl text-center text-sm shadow-md shadow-brand-600/20 transition-all" href="#comprar">
+        Comprar con Envío Gratis
+      </a>
+</div>
+</aside>
+<!-- END: FixedBottomStickyBar -->
+</body></html>
